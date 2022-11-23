@@ -1,0 +1,49 @@
+/* Наша команда */
+.team {
+    @include section;
+
+    background-color: var(--color-button-bg);
+}
+
+.team__list {
+    @include list;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.team__item {
+    /* width: 270px; */
+    flex-basis: calc((100% - 30px * 3) / 4);
+    /* margin-right: 30px; */
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: var(--color-white-text-bg);
+}
+
+/* .team .item:nth-child(4n) {
+  margin-right: 0;
+} */
+
+.team__thumb {
+    padding: 30px 32px;
+}
+
+.team__title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    padding-bottom: 16px;
+}

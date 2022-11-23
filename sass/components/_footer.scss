@@ -1,0 +1,31 @@
+/* Футер   */
+.footer {
+    @include section (60px, 60px);
+
+    background-color: var(--color-bg);
+    }
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-white-text-bg);
+
+    margin-bottom: 20px;
+}
+
+.footer__thumb {
+    margin-left: 93px;
+}
+
+
+
+
+
+
+

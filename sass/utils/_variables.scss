@@ -1,0 +1,32 @@
+/* +цвет текста при наведении и части лого #2196F3; */
+/* +цвет текста заголовков #212121; */
+/* цвет текста героя и части лого в футере #FFFFFF; */
+/* +цвет  основного текста #757575; */
+/* цвет лого Studio в хедере #000000;*/
+/* цвет текста телефона и мыла в футере rgba(255, 255, 255, 0.6); */
+/* +хедер и двух секций background: #FFFFFF; */
+/* наша команда секция  background: #F5F4FA;*/
+/* +секция герой и футер background: #2F303A; */
+/* кнопки background #F5F4FA; */
+/*телефон и адрес в футере rgba(255, 255, 255, 0.6); */
+:root {
+    // colors
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --color-white-text-bg: #ffffff;
+    --color-bg: #2f303a;
+    --color-button-bg: #f5f4fa;
+    --color-text-contacts-footer: rgba(255, 255, 255, 0.6);
+    --color-text-logo: #000000;
+    --color-button-bg-accent: #188CE8;
+    --color-link: #AFB1B8;
+
+    // fonts
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+
+    // other
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

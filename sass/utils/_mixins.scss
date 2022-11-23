@@ -1,0 +1,10 @@
+@mixin section ($pt: 94px, $pb: $pt) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin list ($ls: none, $m: 0, $p: 0) {
+    list-style: $ls;
+    margin: $m;
+    padding: $p;
+}

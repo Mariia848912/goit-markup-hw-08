@@ -1,0 +1,22 @@
+/* Логотип*/
+.logo {
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo--color-black {
+    color: var(--color-text-logo);
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo--color-white {
+    color: var(--color-white-text-bg);
+}

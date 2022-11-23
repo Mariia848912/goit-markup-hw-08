@@ -1,0 +1,133 @@
+/* Модальне вікно */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 581px;
+    width: 528px;
+    padding: 40px;
+    border-radius: 4px;
+
+    background-color: var(--color-white-text-bg);
+
+    transition: transform 250ms ease-in;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-80%, -50%);
+}
+
+.form-text {
+    display: inline-block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-white-text-bg);
+
+    cursor: pointer;
+
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.close-btn:hover {
+    fill: var(--accent-color);
+}
+
+.modal-title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.form-group .form-field {
+    position: relative;
+}
+
+.modal-form .form-input {
+
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-form .form-input:focus+.form-icon {
+    fill: var(--accent-color);
+}
+
+.modal-form .form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.tumb-form-btn {
+    text-align: center;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: var(--color-button-bg-accent);
+}
