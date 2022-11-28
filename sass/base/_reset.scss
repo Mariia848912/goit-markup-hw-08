@@ -11,12 +11,15 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
 
 // Эти свойства не выносила отдельно,  а каждому линку прописывала. В следующий раз надо вынести
-// .link {
-// text-decoration: none;
-// color: currentColor;
-// }
+// внесла только для меню телефона
+.link {
+text-decoration: none;
+color: currentColor;
+}

@@ -1,4 +1,10 @@
 /* Навігація сайту */
+.nav {
+    @media screen and (max-width: #{$tablet - 0.02}) {
+    display: none
+    }
+    
+}
 .nav__list {
     @include list;
     

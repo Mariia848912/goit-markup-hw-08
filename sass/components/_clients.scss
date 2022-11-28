@@ -1,6 +1,6 @@
 /* Постійні клієнти */
 .clients {
-    @include section;
+    @extend %section;
 }
 
 .clients__list {
@@ -9,13 +9,45 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    
+    @media screen and (max-width: #{$desktop - 0.02}) {
+    flex-wrap: wrap;
+   
+    }
+    
+}
+
+.clients__item {
+@media screen and (min-width: $mobile) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
 }
 
 .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    
+    // @media screen and (min-width: $mobile) {
+    //         width: 210px;
+    //     }
+    
+        @media screen and (min-width: $tablet) {
+            width: 226px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 170px;
+        }
+      
     height: 92px;
 
     color: var(--color-link);
@@ -25,6 +57,8 @@
     transition-property: color, border-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+// flex-basis: calc((100% - 30px * 3) / 4);
 
     &:hover,
     &:focus {

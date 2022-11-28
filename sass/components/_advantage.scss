@@ -1,18 +1,52 @@
 /* Переваги компанії */
 .advantage {
-    @include section;
+    @extend %section;
 }
 
 .advantage__list {
     @include list;
     
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        // justify-content: space-between;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        }
+}
+.advantage__thumb {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    height: 120px;
+
+    background-color: var(--color-button-bg);
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
 }
 
 .advantage__title {
     margin-bottom: 10px;
-    width: 270px;
+    
+    @media screen and (min-width: $tablet) {
+        width: 270px;
+    }
+
+    @media screen and (max-width: #{$tablet - 0.02}) {
+        text-align: center;
+    }
 
     color: var(--title-text-color);
 
@@ -20,22 +54,18 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    
 }
 
-.advantage__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-
-    background-color: var(--color-button-bg);
-    border-radius: 4px;
-}
 
 .advantage__text {
     line-height: 1.71;
+    
+@media screen and (min-width: $tablet) {
+    width: 354px;
+    }
+@media screen and (min-width: $desktop) {
     width: 270px;
+    }
 }
