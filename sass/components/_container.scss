@@ -5,24 +5,23 @@
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid green;
-    outline-offset: -2px;
-    
+  // outline: 2px solid green;
+  //   outline-offset: -2px;
+
   // mobile
   @media screen and (min-width: $mobile) {
     // может мин ширина экрана и ширина ниже отличаться. нужно смотреть по макету (ширина секции и левый/правый паддинг)
     width: $mobile;
-  } 
-  
+  }
+
   // tablet
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     width: $tablet;
   }
-  
+
   // desktop
-    @media screen and (min-width: $desktop) {
-      width: $desktop;
-    }
-  
-}  /* outline: 2px solid green;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+} /* outline: 2px solid green;
   outline-offset: -2px; */

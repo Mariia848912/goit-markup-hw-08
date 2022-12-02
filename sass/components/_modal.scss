@@ -7,7 +7,10 @@
   transform: translate(-50%, -50%);
 
   min-height: 581px;
-  width: 450px;
+  width: 100%;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
   @media screen and (min-width: $desktop) {
     width: 528px;
   }
@@ -85,7 +88,10 @@
 }
 
 .modal-form .form-input {
-  width: 370px;
+  width: 100%;
+  @media screen and (min-width: $mobile) {
+    width: 370px;
+  }
   @media screen and (min-width: $desktop) {
     width: 448px;
   }
