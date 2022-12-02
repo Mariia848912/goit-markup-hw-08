@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/bg_s@2x.jpg);
+      url(../images/hero/bg_s@2x.jpg);
   }
 
   //   tablet
@@ -55,7 +55,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/bg_l@1x.jpg);
+      url(../images/hero/bg_l@1x.jpg);
 
     // desktop retina
     @media screen and (min-device-pixel-ratio: 2),
@@ -65,7 +65,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/bg_l@2x.jpg);
+        url(../images/hero/bg_l@2x.jpg);
     }
   }
   @media screen and (min-width: $desktop) {
