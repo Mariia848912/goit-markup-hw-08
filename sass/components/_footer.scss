@@ -1,31 +1,53 @@
 /* Футер   */
 .footer {
-    @include section (60px, 60px);
+  @include section;
 
-    background-color: var(--color-bg);
-    }
+  background-color: var(--color-bg);
+}
 
 .footer__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.footer__thumb--first {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 102px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 125px;
+  }
+
+  //   @media screen and (min-width: $tablet) {
+  //     display: inline-block;
+  //   }
 }
 
 .footer__text {
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--color-white-text-bg);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-white-text-bg);
 
-    margin-bottom: 20px;
+  @media screen and (max-width: #{$desktop - 0.02}) {
+    text-align: center;
+  }
+
+  margin-bottom: 20px;
 }
 
 .footer__thumb {
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
+  }
 }
-
-
-
-
-
-
-

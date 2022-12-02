@@ -97,8 +97,26 @@
 }
 /* Контакти footer */
 .address-box {
-  margin-right: 70px;
   width: 231px;
+
+  @media screen and (max-width: #{$tablet - 0.02}) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // display: inline-block;
+    margin-right: 165px;
+  }
+
+  @media screen and (max-width: #{$desktop - 0.02}) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .address-box__list {

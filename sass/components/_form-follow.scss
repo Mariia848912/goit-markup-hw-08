@@ -1,53 +1,70 @@
 /* Форма Follow */
 .follow {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
+  }
 }
 
 .follow__label {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (max-width: #{$desktop - 0.02}) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
     width: 358px;
     margin-right: 12px;
+  }
 }
 
 .follow__input {
-    padding: 15px;
-    width: 100%;
-    height: 50px;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
 
-    outline: transparent;
+  outline: transparent;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .follow-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .follow__button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 28px;
-    min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  min-width: 200px;
 
-    transition: background-color var(--transition-duration) var(--transition-timing-function);
+  @media screen and (max-width: #{$desktop - 0.02}) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .follow__icon {
-    margin-left: 10px;
+  margin-left: 10px;
 
-    fill: currentColor;
+  fill: currentColor;
 }

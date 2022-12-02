@@ -1,22 +1,28 @@
 /* Логотип*/
 .logo {
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
-    font-weight: 700;
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+
+  @media screen and (min-width: $desktop) {
     font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
+    line-height: calc(31 / 26);
+  }
+
+  text-decoration: none;
 }
 
 .logo--color-black {
-    color: var(--color-text-logo);
+  color: var(--color-text-logo);
 }
 
 .footer__logo {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .logo--color-white {
-    color: var(--color-white-text-bg);
+  color: var(--color-white-text-bg);
 }
