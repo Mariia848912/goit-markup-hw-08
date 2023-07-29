@@ -14,11 +14,7 @@
   }
 }
 
-// .contact-nav__item:not(:last-child) {
-//   @media screen and (min-width: $desktop) {
-//     margin-right: 50px;
-//   }
-// }
+
 .contact-nav__item {
   &:not(:last-child) {
     @media screen and (max-width: #{$desktop - 0.02}) {
@@ -32,11 +28,7 @@
 .contact-nav__link {
   display: flex;
   align-items: center;
-  /* display: block; */
-  //   @media screen and (min-width: $tablet) {
-  //     padding-top: 21px;
-  //     padding-bottom: 21px;
-  //   }
+ 
 
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
@@ -106,7 +98,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    // display: inline-block;
+    
     margin-right: 165px;
   }
 

@@ -16,14 +16,9 @@
 }
 
 .work__item {
-  /* margin-right: 30px; */
-  /* width: 370px; */
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 
-/* .about-work .item:nth-child(3n) {
-margin-right: 0;
-} */
 .work__wrapper {
   position: relative;
 }

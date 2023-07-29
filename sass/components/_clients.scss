@@ -36,9 +36,6 @@
     align-items: center;
     justify-content: center;
     
-    // @media screen and (min-width: $mobile) {
-    //         width: 210px;
-    //     }
     
         @media screen and (min-width: $tablet) {
             width: 226px;
@@ -58,7 +55,7 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 
-// flex-basis: calc((100% - 30px * 3) / 4);
+
 
     &:hover,
     &:focus {

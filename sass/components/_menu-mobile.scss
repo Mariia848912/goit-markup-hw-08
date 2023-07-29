@@ -88,7 +88,6 @@
 
 .mobile-menu-link {
   display: block;
-  //   padding: 10px;
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -108,10 +107,7 @@
 .current {
   color: var(--accent-color);
 }
-// .menu-icon-close,
-// .menu-icon-open {
-//   fill: currentColor;
-// }
+
 
 .mobile-contacts {
   @include list;
